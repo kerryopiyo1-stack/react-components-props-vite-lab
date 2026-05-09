@@ -1,13 +1,12 @@
 
-
-function About(props) {
+function About({ image = "https://via.placeholder.com/215", about }) {
   return (
     <aside>
       <img
-        src={props.image}
+        src={image}
         alt="blog logo"
       />
-      <p>{props.about}</p>
+      <p>{about}</p>
     </aside>
   );
 }
